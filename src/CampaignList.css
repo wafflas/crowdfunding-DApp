@@ -1,0 +1,167 @@
+.campaign-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.campaign-table th, .campaign-table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.campaign-table tr:nth-child(even) {
+  background-color: white;
+}
+
+.campaign-row td {
+  vertical-align: middle;
+}
+
+.action-button {
+  margin-right: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pledge-button {
+  background-color: green;
+  color: white;
+}
+
+.pledge-button:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+}
+
+.cancel-button {
+  background-color: red;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
+
+.fulfill-button {
+  background-color: gray; 
+  color: white;
+  cursor: not-allowed;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.fulfill-button.enabled {
+  background-color: blue; 
+  cursor: pointer;
+}
+
+.fulfill-button.enabled:hover {
+  background-color: darkblue;
+  transform: scale(1.05);
+}
+
+.fulfill-button.disabled {
+  background-color: gray; 
+  cursor: not-allowed;
+}
+
+.claim-button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.claim-button.active {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.claim-button.active:hover {
+  background-color: darkblue;
+  transform: scale(1.05);
+}
+
+.claim-button.disabled {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+  .campaign-table th, .campaign-table td {
+    padding: 10px;
+  }
+
+  .action-button {
+    padding: 5px 10px;
+  }
+}
+
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+
+.canceled-campaigns-container {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  margin-bottom: 20px;
+}
+
+.canceled-campaigns-container h3 {
+  margin: 0; 
+  }
+
+.claim-button {
+  padding: 10px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.claim-button:hover {
+  background-color: darkblue;
+  transform: scale(1.05);
+}
+
+.claim-button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+
+.pledge-button.disabled {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+}
+
+.pledge-button.disabled:hover {
+  background-color: gray; 
+  transform: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .canceled-campaigns-container {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .claim-button {
+    margin-top: 10px; 
+  }
+}
